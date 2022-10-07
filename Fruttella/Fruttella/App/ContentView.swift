@@ -8,19 +8,36 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var isShowingSettings:Bool = false
+    var fruits: [Fruit] = fruitsData
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView{
+            List{
+                ForEach(fruits) { fruit in
+                    NavigationLink(destination: FruitDetailView(fruit:fruit)){
+                        FruitRowView(fruit: fruit).padding(.vertical, 4)
+                    }
+                 
+                }
+            }
+            .navigationTitle("Fruits")
+            .toolbar{
+                ToolbarItem(placement: .primaryAction){
+                    Button(action: {isShowingSettings = true}){
+                        Image(systemName: "slider.horizontal.3")
+                    }.sheet(isPresented: $isShowingSettings){
+                        SettingsView()
+                    }
+                }
+            }
         }
-        .padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(fruits: fruitsData)
     }
 }
