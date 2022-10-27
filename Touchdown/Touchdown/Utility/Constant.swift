@@ -11,6 +11,7 @@ let players: [PlayerModel] = Bundle.main.decode("player.json")
 let categories: [CategoryModel] = Bundle.main.decode("category.json")
 let products: [ProductModel] = Bundle.main.decode("product.json")
 let brands: [BrandModel] = Bundle.main.decode("brand.json")
+let sampleProduct = products[0]
 
 //COLOR
 let colorBackground : Color = Color("ColorBackground")
