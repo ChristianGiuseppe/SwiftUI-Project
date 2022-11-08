@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		341675B2291597AA003FB06B /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341675B1291597AA003FB06B /* BackgroundImageView.swift */; };
+		344BE05B291A9A25000DEB01 /* NewTaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344BE05A291A9A25000DEB01 /* NewTaskItemView.swift */; };
+		344BE05D291A9F2D000DEB01 /* BlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344BE05C291A9F2D000DEB01 /* BlankView.swift */; };
+		344BE05F291ABCCF000DEB01 /* ListRowItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344BE05E291ABCCF000DEB01 /* ListRowItemView.swift */; };
+		344BE061291ABE47000DEB01 /* CheckboxStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344BE060291ABE47000DEB01 /* CheckboxStyle.swift */; };
+		344BE069291AC0E3000DEB01 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344BE068291AC0E3000DEB01 /* WidgetKit.framework */; };
+		344BE06B291AC0E3000DEB01 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344BE06A291AC0E3000DEB01 /* SwiftUI.framework */; };
+		344BE06E291AC0E3000DEB01 /* DevnoteWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344BE06D291AC0E3000DEB01 /* DevnoteWidgetBundle.swift */; };
+		344BE070291AC0E3000DEB01 /* DevnoteWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344BE06F291AC0E3000DEB01 /* DevnoteWidgetLiveActivity.swift */; };
+		344BE072291AC0E3000DEB01 /* DevnoteWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344BE071291AC0E3000DEB01 /* DevnoteWidget.swift */; };
+		344BE074291AC0E5000DEB01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 344BE073291AC0E5000DEB01 /* Assets.xcassets */; };
+		344BE078291AC0E5000DEB01 /* DevnoteWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 344BE066291AC0E2000DEB01 /* DevnoteWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		344BE07D291AC58B000DEB01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 347584CF290C8D3300C43ED3 /* Assets.xcassets */; };
+		344BE07E291AC6B0000DEB01 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34758506290D820B00C43ED3 /* Constant.swift */; };
 		347584CC290C8D3100C43ED3 /* DevnoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347584CB290C8D3100C43ED3 /* DevnoteApp.swift */; };
 		347584CE290C8D3100C43ED3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347584CD290C8D3100C43ED3 /* ContentView.swift */; };
 		347584D0290C8D3300C43ED3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 347584CF290C8D3300C43ED3 /* Assets.xcassets */; };
@@ -14,9 +28,20 @@
 		347584DD290C8D3300C43ED3 /* DevnoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347584DC290C8D3300C43ED3 /* DevnoteTests.swift */; };
 		347584E7290C8D3300C43ED3 /* DevnoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347584E6290C8D3300C43ED3 /* DevnoteUITests.swift */; };
 		347584E9290C8D3300C43ED3 /* DevnoteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347584E8290C8D3300C43ED3 /* DevnoteUITestsLaunchTests.swift */; };
+		347584FF290C95DC00C43ED3 /* Devote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 347584FC290C95DB00C43ED3 /* Devote.xcdatamodeld */; };
+		34758500290C95DC00C43ED3 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347584FE290C95DB00C43ED3 /* Persistence.swift */; };
+		34758507290D820B00C43ED3 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34758506290D820B00C43ED3 /* Constant.swift */; };
+		34758509290EACC500C43ED3 /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34758508290EACC500C43ED3 /* HideKeyboardExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		344BE076291AC0E5000DEB01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 347584C0290C8D3100C43ED3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 344BE065291AC0E2000DEB01;
+			remoteInfo = DevnoteWidgetExtension;
+		};
 		347584D9290C8D3300C43ED3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 347584C0290C8D3100C43ED3 /* Project object */;
@@ -33,7 +58,34 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		344BE07C291AC0E5000DEB01 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				344BE078291AC0E5000DEB01 /* DevnoteWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		341675B1291597AA003FB06B /* BackgroundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageView.swift; sourceTree = "<group>"; };
+		344BE05A291A9A25000DEB01 /* NewTaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskItemView.swift; sourceTree = "<group>"; };
+		344BE05C291A9F2D000DEB01 /* BlankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankView.swift; sourceTree = "<group>"; };
+		344BE05E291ABCCF000DEB01 /* ListRowItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowItemView.swift; sourceTree = "<group>"; };
+		344BE060291ABE47000DEB01 /* CheckboxStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxStyle.swift; sourceTree = "<group>"; };
+		344BE066291AC0E2000DEB01 /* DevnoteWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DevnoteWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		344BE068291AC0E3000DEB01 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		344BE06A291AC0E3000DEB01 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		344BE06D291AC0E3000DEB01 /* DevnoteWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevnoteWidgetBundle.swift; sourceTree = "<group>"; };
+		344BE06F291AC0E3000DEB01 /* DevnoteWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevnoteWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		344BE071291AC0E3000DEB01 /* DevnoteWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevnoteWidget.swift; sourceTree = "<group>"; };
+		344BE073291AC0E5000DEB01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		344BE075291AC0E5000DEB01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		347584C8290C8D3100C43ED3 /* Devnote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Devnote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		347584CB290C8D3100C43ED3 /* DevnoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevnoteApp.swift; sourceTree = "<group>"; };
 		347584CD290C8D3100C43ED3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,9 +96,23 @@
 		347584E2290C8D3300C43ED3 /* DevnoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DevnoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		347584E6290C8D3300C43ED3 /* DevnoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevnoteUITests.swift; sourceTree = "<group>"; };
 		347584E8290C8D3300C43ED3 /* DevnoteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevnoteUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		347584FD290C95DB00C43ED3 /* Devote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Devote.xcdatamodel; sourceTree = "<group>"; };
+		347584FE290C95DB00C43ED3 /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		34758501290C962B00C43ED3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		34758506290D820B00C43ED3 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		34758508290EACC500C43ED3 /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		344BE063291AC0E2000DEB01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344BE06B291AC0E3000DEB01 /* SwiftUI.framework in Frameworks */,
+				344BE069291AC0E3000DEB01 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		347584C5290C8D3100C43ED3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -71,12 +137,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		344BE067291AC0E3000DEB01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				344BE068291AC0E3000DEB01 /* WidgetKit.framework */,
+				344BE06A291AC0E3000DEB01 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		344BE06C291AC0E3000DEB01 /* DevnoteWidget */ = {
+			isa = PBXGroup;
+			children = (
+				344BE06D291AC0E3000DEB01 /* DevnoteWidgetBundle.swift */,
+				344BE06F291AC0E3000DEB01 /* DevnoteWidgetLiveActivity.swift */,
+				344BE071291AC0E3000DEB01 /* DevnoteWidget.swift */,
+				344BE073291AC0E5000DEB01 /* Assets.xcassets */,
+				344BE075291AC0E5000DEB01 /* Info.plist */,
+			);
+			path = DevnoteWidget;
+			sourceTree = "<group>";
+		};
 		347584BF290C8D3100C43ED3 = {
 			isa = PBXGroup;
 			children = (
 				347584CA290C8D3100C43ED3 /* Devnote */,
 				347584DB290C8D3300C43ED3 /* DevnoteTests */,
 				347584E5290C8D3300C43ED3 /* DevnoteUITests */,
+				344BE06C291AC0E3000DEB01 /* DevnoteWidget */,
+				344BE067291AC0E3000DEB01 /* Frameworks */,
 				347584C9290C8D3100C43ED3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +176,7 @@
 				347584C8290C8D3100C43ED3 /* Devnote.app */,
 				347584D8290C8D3300C43ED3 /* DevnoteTests.xctest */,
 				347584E2290C8D3300C43ED3 /* DevnoteUITests.xctest */,
+				344BE066291AC0E2000DEB01 /* DevnoteWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,8 +184,14 @@
 		347584CA290C8D3100C43ED3 /* Devnote */ = {
 			isa = PBXGroup;
 			children = (
-				347584CB290C8D3100C43ED3 /* DevnoteApp.swift */,
-				347584CD290C8D3100C43ED3 /* ContentView.swift */,
+				34758501290C962B00C43ED3 /* Info.plist */,
+				347584FB290C953900C43ED3 /* View */,
+				347584FA290C953200C43ED3 /* Utility */,
+				347584F9290C952900C43ED3 /* Style */,
+				347584F8290C952100C43ED3 /* Sound */,
+				347584F7290C951900C43ED3 /* Screen */,
+				347584F6290C951100C43ED3 /* Model */,
+				347584F5290C950000C43ED3 /* Extension */,
 				347584CF290C8D3300C43ED3 /* Assets.xcassets */,
 				347584D1290C8D3300C43ED3 /* Preview Content */,
 			);
@@ -127,9 +223,86 @@
 			path = DevnoteUITests;
 			sourceTree = "<group>";
 		};
+		347584F5290C950000C43ED3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				34758508290EACC500C43ED3 /* HideKeyboardExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		347584F6290C951100C43ED3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				347584FC290C95DB00C43ED3 /* Devote.xcdatamodeld */,
+				347584FE290C95DB00C43ED3 /* Persistence.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		347584F7290C951900C43ED3 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				347584CD290C8D3100C43ED3 /* ContentView.swift */,
+				347584CB290C8D3100C43ED3 /* DevnoteApp.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		347584F8290C952100C43ED3 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		347584F9290C952900C43ED3 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				344BE060291ABE47000DEB01 /* CheckboxStyle.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		347584FA290C953200C43ED3 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				34758506290D820B00C43ED3 /* Constant.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		347584FB290C953900C43ED3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				341675B1291597AA003FB06B /* BackgroundImageView.swift */,
+				344BE05A291A9A25000DEB01 /* NewTaskItemView.swift */,
+				344BE05C291A9F2D000DEB01 /* BlankView.swift */,
+				344BE05E291ABCCF000DEB01 /* ListRowItemView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		344BE065291AC0E2000DEB01 /* DevnoteWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 344BE079291AC0E5000DEB01 /* Build configuration list for PBXNativeTarget "DevnoteWidgetExtension" */;
+			buildPhases = (
+				344BE062291AC0E2000DEB01 /* Sources */,
+				344BE063291AC0E2000DEB01 /* Frameworks */,
+				344BE064291AC0E2000DEB01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DevnoteWidgetExtension;
+			productName = DevnoteWidgetExtension;
+			productReference = 344BE066291AC0E2000DEB01 /* DevnoteWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		347584C7290C8D3100C43ED3 /* Devnote */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 347584EC290C8D3300C43ED3 /* Build configuration list for PBXNativeTarget "Devnote" */;
@@ -137,10 +310,12 @@
 				347584C4290C8D3100C43ED3 /* Sources */,
 				347584C5290C8D3100C43ED3 /* Frameworks */,
 				347584C6290C8D3100C43ED3 /* Resources */,
+				344BE07C291AC0E5000DEB01 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				344BE077291AC0E5000DEB01 /* PBXTargetDependency */,
 			);
 			name = Devnote;
 			productName = Devnote;
@@ -190,9 +365,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1400;
+				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					344BE065291AC0E2000DEB01 = {
+						CreatedOnToolsVersion = 14.1;
+					};
 					347584C7290C8D3100C43ED3 = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
@@ -222,11 +400,21 @@
 				347584C7290C8D3100C43ED3 /* Devnote */,
 				347584D7290C8D3300C43ED3 /* DevnoteTests */,
 				347584E1290C8D3300C43ED3 /* DevnoteUITests */,
+				344BE065291AC0E2000DEB01 /* DevnoteWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		344BE064291AC0E2000DEB01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344BE07D291AC58B000DEB01 /* Assets.xcassets in Resources */,
+				344BE074291AC0E5000DEB01 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		347584C6290C8D3100C43ED3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -253,12 +441,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		344BE062291AC0E2000DEB01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344BE072291AC0E3000DEB01 /* DevnoteWidget.swift in Sources */,
+				344BE070291AC0E3000DEB01 /* DevnoteWidgetLiveActivity.swift in Sources */,
+				344BE06E291AC0E3000DEB01 /* DevnoteWidgetBundle.swift in Sources */,
+				344BE07E291AC6B0000DEB01 /* Constant.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		347584C4290C8D3100C43ED3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				347584CE290C8D3100C43ED3 /* ContentView.swift in Sources */,
+				341675B2291597AA003FB06B /* BackgroundImageView.swift in Sources */,
+				34758500290C95DC00C43ED3 /* Persistence.swift in Sources */,
+				34758509290EACC500C43ED3 /* HideKeyboardExtension.swift in Sources */,
+				344BE05D291A9F2D000DEB01 /* BlankView.swift in Sources */,
+				34758507290D820B00C43ED3 /* Constant.swift in Sources */,
+				344BE05F291ABCCF000DEB01 /* ListRowItemView.swift in Sources */,
+				347584FF290C95DC00C43ED3 /* Devote.xcdatamodeld in Sources */,
 				347584CC290C8D3100C43ED3 /* DevnoteApp.swift in Sources */,
+				344BE061291ABE47000DEB01 /* CheckboxStyle.swift in Sources */,
+				344BE05B291A9A25000DEB01 /* NewTaskItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +490,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		344BE077291AC0E5000DEB01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 344BE065291AC0E2000DEB01 /* DevnoteWidgetExtension */;
+			targetProxy = 344BE076291AC0E5000DEB01 /* PBXContainerItemProxy */;
+		};
 		347584DA290C8D3300C43ED3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 347584C7290C8D3100C43ED3 /* Devnote */;
@@ -295,6 +508,62 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		344BE07A291AC0E5000DEB01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S8K74X9727;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DevnoteWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DevnoteWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brodev.Devnote.DevnoteWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		344BE07B291AC0E5000DEB01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S8K74X9727;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DevnoteWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DevnoteWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brodev.Devnote.DevnoteWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		347584EA290C8D3300C43ED3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -412,6 +681,7 @@
 		347584ED290C8D3300C43ED3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -420,11 +690,11 @@
 				DEVELOPMENT_TEAM = S8K74X9727;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Devnote/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -441,6 +711,7 @@
 		347584EE290C8D3300C43ED3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,11 +720,11 @@
 				DEVELOPMENT_TEAM = S8K74X9727;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Devnote/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -546,6 +817,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		344BE079291AC0E5000DEB01 /* Build configuration list for PBXNativeTarget "DevnoteWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				344BE07A291AC0E5000DEB01 /* Debug */,
+				344BE07B291AC0E5000DEB01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		347584C3290C8D3100C43ED3 /* Build configuration list for PBXProject "Devnote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -583,6 +863,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		347584FC290C95DB00C43ED3 /* Devote.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				347584FD290C95DB00C43ED3 /* Devote.xcdatamodel */,
+			);
+			currentVersion = 347584FD290C95DB00C43ED3 /* Devote.xcdatamodel */;
+			path = Devote.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 347584C0290C8D3100C43ED3 /* Project object */;
 }
