@@ -8,10 +8,12 @@
 import SwiftUI
 
 @main
-struct Todo_AppApp: App {
+struct Todo_App: App {
+    var persistenceController  =  PersistenceController.shared
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
